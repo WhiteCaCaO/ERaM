@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sriracha&display=swap');
+
+.navBar {
+	margin-top: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 16px 16px 0;
+	a {
+		color: #4a3763;
+	}
+}
+
+.navBar1 {
+	border: 1px solid gainsboro;
+	background-color: #c9e9f8;
+	border-radius: 15px;
+}
+
+.navBar2 {
+	border-bottom: 1.5px solid #4a3763;
+}
+.navHome {
+	color: #2f1154;
+	margin-left: 30px;
+	text-decoration: none;
+	font-family: 'Lobster', cursive;
+}
+.navLogo {
+	color: #2f1154;
+	margin-left: 30px;
+	text-decoration: none;
+	font-family: 'Lobster', cursive;
+}
+.LogoSize {
+	font-size: 25px;
+}
+.NavFont {
+	font-size: 20px;
+}
+
+.navItems {
+	display: flex;
+	align-items: center;
+}
+
+.navItem {
+	padding: 6px 12px;
+	margin: 0 4px;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	a {
+		color: inherit;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.navItem__menu-container {
+	position: relative;
+}
+
+.navItem__trigger {
+	border-radius: 50%;
+	margin-top: 5px;
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	align-items: center;
+}
+
+.menu {
+	background: #ffffff;
+	border-radius: 8px;
+	position: absolute;
+	top: 52px;
+	right: 0;
+	width: 200px;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	z-index: 1000;
+	opacity: 80%;
+	.menu__square {
+		position: absolute;
+		left: 80%;
+		top: -9px;
+		width: 15px;
+		height: 15px;
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		background-color: white;
+		border-bottom: none;
+		border-right: none;
+		transform: rotate(45deg);
+	}
+
+	li {
+		font-size: 16px;
+		line-height: 18px;
+		text-decoration: none;
+		color: #2f1154;
+		padding: 15px 20px;
+		display: block;
+
+		.menu__icon {
+			margin-right: 10px;
+		}
+	}
+	.menu__mypage {
+		border-bottom: 1.5px #d9c9f8 solid;
+	}
+}
+
+.navItem button {
+	background-color: transparent;
+	border: none;
+	color: #4a3763;
+	font-size: 20px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.navItem button .menu__icon {
+	margin-right: 8px;
+}

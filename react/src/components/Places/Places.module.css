@@ -1,0 +1,149 @@
+/* 컨테이너 스타일 */
+.work__content {
+	margin-top: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 16px;
+}
+
+/* 그리드 아이템 스타일 */
+.work__content__item {
+	position: relative;
+	width: 100%;
+	padding-top: 100%; /* 1:1 비율을 위해 */
+	overflow: hidden;
+	cursor: pointer;
+	margin: 10px; /* 각 그리드 항목에 마진 추가 */
+	border: 7px solid #c9e9f8; /* 테두리 추가 */
+	box-sizing: border-box; /* 테두리와 패딩을 포함하여 요소 크기 계산 */
+}
+
+/* 이미지 스타일 */
+.work__content__item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* 호버 효과 스타일 */
+.work__content__item::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* background-color: rgba(0, 0, 0, 0.9); */
+	opacity: 0;
+	transition: var(--transition);
+}
+
+.work__content__item:hover::after {
+	opacity: 1;
+}
+.work__content__item h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 8px;
+	color: #000; /* 흰색 */
+	font-weight: bold;
+	border: 5px solid #c9e9f8; /* 테두리 추가 */
+	padding: 8px; /* 테두리 안의 공간 */
+	background-color: #fff; /* 테두리 배경색 검정색 */
+	opacity: 0;
+}
+
+.work__content__item:hover h3 {
+	opacity: 1;
+}
+
+/* 아이콘 스타일 */
+.work__content__item .icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: var(--transition);
+}
+
+.work__content__item .icon img {
+	width: 40px;
+}
+
+.work__content__item:hover .icon {
+	opacity: 1;
+	z-index: 1;
+}
+
+/* 반응형 그리드 */
+@media screen and (min-width: 678px) {
+	.work__content {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.work__content {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.work__content {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+/* 이미지 모달 스타일 */
+.image__modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 5;
+	transition: var(--transition);
+	visibility: hidden;
+	opacity: 0;
+}
+
+.image__modal__show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.image__modal--content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 720px;
+	min-width: 350px;
+	width: 100%;
+}
+
+.image__modal--content img {
+	width: 100%;
+}
+
+/* 모달 닫기 버튼 스타일 */
+.modal__close--btn {
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.modal__close--btn:hover {
+	color: var(--dark-color) !important;
+}

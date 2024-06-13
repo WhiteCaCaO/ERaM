@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'MoveSans-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MoveSans-Bold';
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainContainer {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue; /* 테두리를 파란색으로 설정 */
+}
+
+.customSidebar {
+  width: 200px !important; /* 사용자 목록 너비 설정 */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarHeader {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebarContent {
+  flex-grow: 1;
+  overflow-y: auto; /* 스크롤 설정 */
+}
+
+.customChatContainer {
+  flex-grow: 1; /* 남은 공간을 모두 차지하도록 설정 */
+  display: flex;
+  flex-direction: column;
+}
+
+.messageList {
+  flex-grow: 1;
+  overflow-y: auto; /* 스크롤을 설정 */
+}
+
+.messageInputContainer {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+/* 사용자 이름과 메시지 스타일 */
+.customMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.messageSender {
+  font-family: 'MoveSans-Bold', sans-serif;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.messageContent {
+  background-color: #f1f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 60%;
+  word-break: break-word;
+}
+
+/* 버튼 스타일 */
+.buttonContainer {
+  display: flex;
+}
+
+.addAmountButton,
+.leaveRoomButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'MoveSans-Bold', sans-serif;
+  transition: background-color 0.3s, margin-right 0.3s, padding 0.3s, height 0.3s;
+  margin-right: 10px; /* 기본 마진 */
+}
+
+.addAmountButton:hover,
+.leaveRoomButton:hover {
+  background-color: #0056b3;
+}
+
+.addAmountButton.close,
+.leaveRoomButton.adjusted {
+  padding: 5px 10px; /* 크기 줄이기 */
+  margin-right: 20px; /* 닫기 버튼일 때 마진 늘리기 */
+  height: 30px; /* 높이 줄이기 */
+}
+
+.amountContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.amountInput {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.sendAmountButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'MoveSans-Bold', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.sendAmountButton:hover {
+  background-color: #218838;
+}
+
+.balanceContainer {
+  margin-top: 10px;
+  font-family: 'MoveSans-Bold', sans-serif;
+}

@@ -1,0 +1,50 @@
+/* Header.module.css */
+@font-face {
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2')
+		format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+.header {
+	margin: 5%;
+	position: relative; /* Header 컴포넌트를 relative로 설정 */
+}
+
+.headerContent {
+	position: absolute;
+	bottom: 20px; /* 버튼 위치 조정 */
+	text-align: center; /* 텍스트를 가운데 정렬 */
+	width: 100%; /* 부모 요소에 맞게 가로 폭 설정 */
+}
+
+.headerContent h1 {
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	font-size: 45px; /* 헤더 텍스트 크기를 키움 */
+	font-weight: bold; /* 헤더 텍스트를 두껍게 설정 */
+	color: rgb(0, 0, 0); /* 헤더 텍스트 색상을 흰색으로 설정 */
+	margin: 20px;
+}
+
+.headerContent p {
+	font-size: 30px; /* 부가 설명 텍스트 크기를 조절 */
+	margin-top: 10px; /* 부가 설명 텍스트 위 여백 추가 */
+	font-weight: bold;
+	color: rgb(34, 33, 33); /* 부가 설명 텍스트 색상을 흰색으로 설정 */
+}
+
+.btn {
+	background-color: #c9e9f8; /* 빨간색 배경색상 */
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	color: black;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block; /* 인라인 요소로 표시하여 옆으로 배열되도록 함 */
+}
+
+.btn:hover {
+	background-color: #ffffff; /* 버튼에 호버 시 배경색상을 하얀색으로 변경 */
+	color: #ff0000; /* 버튼에 호버 시 글자색상을 빨간색으로 변경 */
+}

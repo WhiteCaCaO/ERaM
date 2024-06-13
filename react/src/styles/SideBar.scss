@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.Sidebar__container {
+	background-color: #fff;
+	display: flex;
+	position: relative;
+	right: 30px;
+	flex-direction: column;
+	width: 70%;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px #e1e1e1;
+	margin: 20px;
+	margin-left: 130px;
+	margin-top: 30px;
+	font-family: 'Noto Sans KR', sans-serif;
+	h2 {
+		color: #2f1154;
+		font-weight: bold;
+	}
+
+	a {
+		color: #2f1154;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	a:visited {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.link {
+		margin-top: 20px;
+		text-decoration: none; /* 링크의 밑줄 제거 */
+		color: #2f1154;
+		/* a태그 기본 효과 제거 */
+	}
+
+	#link1 {
+		margin-bottom: 5px;
+	}
+	#link2 {
+		margin-bottom: 5px;
+	}
+
+	.git {
+		.gitIcon {
+			margin-right: 5px;
+		}
+		margin-top: 90px;
+	}
+	.footer {
+		font-size: 14px;
+		margin-top: 10px;
+		color: #808080;
+	}
+}
+
+.all {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: gray;
+	text-decoration: none;
+	font-size: inherit;
+	font-family: inherit;
+}
+.Sidebtn {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: gray;
+	text-decoration: none;
+	font-size: inherit;
+	font-family: inherit;
+}
+.Sidebtn:hover {
+	color: black;
+}

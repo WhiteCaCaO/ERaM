@@ -1,0 +1,115 @@
+.iframe-container {
+	display: flex;
+	justify-content: center; /* 가로 중앙 정렬 */
+	align-items: center; /* 세로 중앙 정렬 (필요에 따라) */
+	height: 100%;
+}
+
+.detail-page {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.detail-page h1 {
+	margin-bottom: 10px;
+}
+
+.detail-page p {
+	margin-bottom: 20px;
+	text-align: center;
+	max-width: 800px;
+}
+
+#map {
+	width: 100%;
+	height: 500px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+	.detail-page {
+		margin: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.detail-page {
+		margin: 10px;
+	}
+
+	#map {
+		height: 400px;
+	}
+}
+
+@media (max-width: 480px) {
+	.detail-page {
+		margin: 5px;
+	}
+
+	#map {
+		height: 300px;
+	}
+}
+
+.comubtn {
+	display: grid;
+	place-items: center;
+	width: 100%; /* 전체 너비를 사용하도록 설정 */
+}
+
+
+.navigate-button:hover {
+	background-color: #c9e9f8;
+}
+.kakao_info_window {
+	position: relative;
+	width: 300px; /* 기본 넓이를 설정합니다 */
+	height: auto;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.kakao_info_window .custom-close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: red;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 18px;
+}
+
+.kakao_info_window .custom-close:hover {
+	background: darkred;
+}
+
+.navigate-button {
+	cursor: pointer;
+	outline: none;
+	border: 2px solid #c9e9f8;
+	background-color: #fff;
+	border-radius: 10px;
+	color: black;
+	font-weight: 600;
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+	padding: 10px 20px; /* 버튼 내부의 패딩을 설정 */
+	margin: 20px; /* 위쪽 마진 추가 */
+}
+

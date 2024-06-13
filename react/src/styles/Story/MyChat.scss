@@ -1,0 +1,56 @@
+.MyChat_container {
+  border: solid 1px #ebe2e8;
+  border-radius: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  width: 65%;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: default;
+  font-weight: bold;
+
+}
+
+.MyChat {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: solid 1px #ebe2e8;
+  margin: 0 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.MyChat:last-child {
+  border-radius: 0 0 18px 18px;
+  border-bottom: none;
+}
+
+.chatroom_number,
+.chatroom_name,
+.chatroom_title,
+.chatroom_time {
+  flex: 1;
+  text-align: center;
+}
+
+.chatroom_number {
+  flex: 0.5;
+}
+
+.chatroom_name {
+  flex: 1.5;
+}
+
+.chatroom_title {
+  flex: 2;
+}
+
+.chatroom_time {
+  flex: 2;
+}

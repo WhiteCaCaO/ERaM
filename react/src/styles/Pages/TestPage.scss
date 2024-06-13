@@ -1,0 +1,15 @@
+.imgtable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.imgtable td {
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.imgtable img {
+	max-width: 100%;
+	height: auto;
+}

@@ -1,0 +1,114 @@
+.story_parent {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+.story_container {
+	position: relative;
+	border-radius: 30%;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	margin: 50px 0px 10px 0px;
+	box-sizing: border-box;
+}
+
+.story_length {
+	font-size: large;
+	color: #2f1154;
+	padding: 10px;
+	margin-left: 5px;
+	font-weight: bold;
+	span {
+		margin-right: 7px;
+	}
+	.refresh__icon {
+		opacity: 0.6;
+		&:hover {
+			animation: rotate_image 1s linear infinite;
+			transform-origin: 50% 50%;
+			opacity: 0.2;
+		}
+	}
+
+	@keyframes rotate_image {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+}
+
+.story {
+	display: flex;
+	position: relative;
+	width: 100%;
+	justify-content: space-between;
+	background-color: white;
+	border-bottom: solid 1px #ebe2e8;
+	margin: 0 10px;
+	padding: 15px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.story:last-child {
+	border-radius: 0 0 18px 18px;
+	border-bottom: none;
+}
+
+.story_title {
+	position: absolute; /*형제 태그(이름)의 크기에 상관없이 제목의 시작점이 같도록 absolute 를 준것 + 부모인 .story는 relative 해줘야함*/
+	left: 100px;
+	bottom: 29px;
+}
+.story_name {
+	position: absolute;
+	right: 140px;
+}
+
+.story_child {
+	text-align: center;
+	font-size: 15px;
+	color: #2f1154;
+}
+
+/*  */
+.story.storyInfo {
+	border-bottom: 1.5px solid #4a3763;
+	border-radius: 16px 16px 0px 0px;
+	font-weight: bold;
+}
+
+.story.storyInfo .story_title {
+	right: 220px;
+}
+
+.writeBtn {
+	background-color: #c9e9f8;
+	border-style: none;
+	color: #000;
+	border-radius: 10px;
+	font-size: 16px;
+	margin: 3px;
+	margin-left: auto;
+
+	padding: 10px 15px;
+	cursor: pointer;
+	// position: absolute;
+	right: 10px;
+}
+
+.pageNav {
+	margin: 0 auto 0 auto;
+}
+
+.pageNav_btn {
+	color: gray; // 흰색 -> 그레이 수정
+	background-color: transparent;
+	border-style: none;
+	font-size: 16px;
+	margin: 0px 5px;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.3;
+	}
+}

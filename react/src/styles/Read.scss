@@ -1,0 +1,177 @@
+.read_container {
+	background-color: #ffffff;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	margin: 30px auto;
+	padding: 30px 40px;
+	// width: 800px;
+	width: 70%;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 2px #e1e1e1;
+}
+
+.read_title {
+	margin: 20px 0px 10px 0;
+	font-size: 30px;
+	font-weight: 600;
+	color: #2f1154;
+}
+.read_numberOfUsers {
+	// 추가
+	font-size: 18px;
+}
+.numberOfUsers_comment {
+	// 추가
+	color: #949494;
+}
+.read_info {
+	position: relative;
+	color: #2f1154;
+	padding-bottom: 10px;
+}
+
+.read_name {
+	color: #808080;
+	position: absolute;
+	bottom: 35px;
+	right: 5px;
+	font-size: 16px; // (추가) 폰트 크기 증가
+}
+
+.read_day {
+	color: #808080;
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+	font-size: 16px; // (추가) 폰트 크기 증가
+}
+.read_content {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	resize: none;
+	height: 500px;
+	max-height: 500px; // 스크롤 적용 전 최대 높이
+	overflow-y: auto; // 스크롤 적용
+	color: black;
+	border-bottom: solid 2px #c9e9f8;
+	border-top: solid 2px #c9e9f8;
+	white-space: pre-wrap; /* 공백과 줄바꿈을 유지 */
+}
+
+.delete_button {
+	cursor: pointer;
+	background-color: #c9e9f8;
+	color: black;
+	border-style: none;
+	border-radius: 10px;
+	font-size: 16px;
+	padding: 5px 15px;
+	margin: 3px;
+}
+
+/* 추가된 스타일 */
+.read_content p {
+	margin: 5px; // (수정)글자 위아래 간격 증가
+	padding: 0;
+}
+
+/* Quill 에디터 클래스에 대한 스타일 추가 */
+.read_content .ql-align-center {
+	text-align: center;
+}
+
+.read_content .ql-align-right {
+	text-align: right;
+}
+
+.read_content .ql-align-justify {
+	text-align: justify;
+}
+
+.read_content .ql-align-left {
+	text-align: left;
+}
+
+.read_content .ql-size-small {
+	font-size: 12px;
+}
+
+.read_content .ql-size-large {
+	font-size: 18px;
+}
+
+.read_content .ql-size-huge {
+	font-size: 24px;
+}
+
+.read_content .ql-font-serif {
+	font-family: 'Georgia', 'Times New Roman', 'serif';
+}
+
+.read_content .ql-font-sans {
+	font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+
+.read_content .ql-font-monospace {
+	font-family: 'Courier New', 'Courier', 'monospace';
+}
+
+.read_content h1 {
+	font-size: 2em;
+}
+
+.read_content h2 {
+	font-size: 1.5em;
+}
+.read_content u {
+	text-decoration: underline;
+	color: inherit; /* Quill 에디터에서 설정된 색상을 유지 */
+}
+
+.read_content ol {
+	list-style-type: decimal;
+	margin: 0;
+	padding-left: 1.5em;
+}
+
+.read_content ul {
+	list-style-type: disc;
+	margin: 0;
+	padding-left: 1.5em;
+}
+.chat_button {
+	margin-top: 10px; /* 채팅방으로 이동 버튼의 위쪽 여백 추가 */
+}
+.button_box {
+	display: flex;
+	float: right; /* 오른쪽으로 배치 */
+}
+.chat_button {
+	background-color: #c9e9f8;
+	border-radius: 10px;
+	border: 5px solid #c9e9f8;
+	font-size: 20px;
+}
+.chat_button:hover {
+	background-color: white;
+}
+.read_button,
+.del_button {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	border: solid 5px #c9e9f8;
+	border-radius: 10px;
+	font-size: 16px;
+	padding: 5px 15px;
+	margin: 3px;
+	width: 100px;
+}
+
+.read_button:hover,
+.del_button:hover {
+	background-color: #c9e9f8; /* 호버 시 배경색 변경 */
+	color: black; /* 호버 시 글자색 변경 */
+}

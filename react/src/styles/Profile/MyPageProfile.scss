@@ -1,0 +1,158 @@
+.MyPageProfile__profile {
+	position: relative;
+	display: flex;
+	margin: 50px auto;
+	width: 65%;
+	height: 250px;
+	align-items: center;
+	border-radius: 15px;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	color: black;
+	background-color: #fff;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.MyPageProfile__container__left {
+	position: relative;
+}
+
+.MyPageProfile__container__left img {
+	border-radius: 50%;
+	margin: 0px 50px;
+	width: 160px;
+	height: 160px;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.MyPageProfile__container__left:hover .AdminProfile {
+	opacity: 0.3;
+}
+
+.Profile__icon {
+	display: none;
+	color: #524fa1;
+	font-size: 23px;
+	position: absolute;
+	bottom: 70px;
+	right: 120px;
+}
+
+.MyPageProfile__container__right {
+	width: 400px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	justify-content: center;
+}
+
+.items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+	flex-grow: 15;
+}
+
+.items span {
+	margin-top: 7px;
+	font-size: 26px;
+	cursor: default;
+}
+
+.button-group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px; /* 버튼 사이 간격 */
+}
+
+.button-group button {
+	cursor: pointer;
+	width: 150px;
+	height: 35px;
+	border: 2px solid #c9e9f8;
+	background-color: #c9e9f8;
+	border-radius: 10px;
+	color: black;
+	font-weight: 600;
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.description span {
+	font-size: 17px;
+	cursor: default;
+	border-bottom: 1px solid #bcbcbc;
+	padding-bottom: 5px;
+}
+
+.description span::after {
+	content: '';
+	display: block;
+	width: 65px;
+	margin: 8px 0px 15px 0px;
+}
+
+.description p {
+	margin-top: 20px;
+	font-size: 15px;
+	cursor: default;
+}
+
+.description textarea {
+	margin-top: 7px;
+	display: block;
+	resize: none;
+}
+
+.MyPageProfile__container__right2 {
+	width: 400px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	justify-content: center;
+}
+
+.items {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin-bottom: 10px;
+	flex-grow: 1;
+}
+
+.items span {
+	margin-top: 7px;
+	font-size: 26px;
+	cursor: default;
+	display: flex;
+	align-items: center;
+}
+
+.items button {
+	cursor: pointer;
+	width: 150px;
+	height: 35px;
+	border: 2px solid #c9e9f8;
+	background-color: #c9e9f8;
+	border-radius: 10px;
+	color: black;
+	font-weight: 600;
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5px; /* 버튼 아래 간격 조정 */
+}
+
+.iconImage {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
