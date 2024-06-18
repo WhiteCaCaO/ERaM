@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Lazy;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity(name = "Posts")
 
@@ -43,5 +44,7 @@ public class Post extends BaseEntity{  // regDate, modDate 상속 -> createdAt, 
   @Column(nullable = false)
   private Long viewCount = 0L;
 
+  @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
+  private List<ChatRoom> chatRooms;
 
 }
